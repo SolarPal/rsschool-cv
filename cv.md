@@ -5,6 +5,7 @@
 ## [Contacts]
 
 **Telephone:** +375291076700  
+**E-mail:** tumaf@mail.ru  
 **Discord:** SolarPal#6158
 
 ## [About me]
