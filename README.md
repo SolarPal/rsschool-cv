@@ -1,3 +1,3 @@
 # rsschool-cv
 
-https://solarpal.github.io/rsschool-cv/cv
+https://solarpal.github.io/rsschool-cv/
