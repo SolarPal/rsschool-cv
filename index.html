@@ -46,12 +46,12 @@
 			<pre>
 				<code class="code-sample">
 				<span class="code-keyword">function</span> solution(<var>number</var>){
-				  <span class="code-keyword">if</span> (<var>number</var> <= 0) {
+				  <span class="code-keyword">if</span> (<var>number</var> &lt;= 0) {
 				    <span class="code-keyword">return</span> 0;
 				  } <span class="code-keyword">else</span> {
 				    <span class="code-keyword">let</span> <var>arr</var> = [];
 				    <span class="code-keyword">let</span> <var>sum</var> = 0;
-				    <span class="code-keyword">for</span> (<span class="code-keyword">let</span> <var>i</var> = 0; <var>i</var> < <var>number</var>; <var>i</var>++) {
+				    <span class="code-keyword">for</span> (<span class="code-keyword">let</span> <var>i</var> = 0; <var>i</var> &lt; <var>number</var>; <var>i</var>++) {
 				      <span class="code-keyword">if</span> (i % 3 == 0 | i % 5 == 0) {
 				    	<var>arr</var>.push(<var>i</var>);
 				    	<span class="code-keyword">continue</span>;
@@ -59,7 +59,7 @@
 				    	<span class="code-keyword">continue</span>;
 				      }
 				    }
-				    <span class="code-keyword">for</span> (<span class="code-keyword">let</span> <var>i</var> = 0; <var>i</var> < <var>arr</var>.length; <var>i</var>++) {
+				    <span class="code-keyword">for</span> (<span class="code-keyword">let</span> <var>i</var> = 0; <var>i</var> &lt; <var>arr</var>.length; <var>i</var>++) {
 				      <var>sum</var> += <var>arr</var>[<var>i</var>];
 				    }
 				    <span class="code-keyword">return</span> <var>sum</var>;
