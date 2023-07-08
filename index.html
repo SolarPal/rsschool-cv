@@ -7,74 +7,87 @@
   </head>
   <body>
 	<header class="header">
-		
-		<nav class="nav">
-			<ul class="nav-list">
-				<li class="nav-item"><a href="#top">^^^^^^^^^</a></li>
-				<li class="nav-item"><a href="#contacts">Contacts</a></li>
-				<li class="nav-item"><a href="#about">Summary</a></li>
-				<li class="nav-item"><a href="#skills">Skills</a></li>
-				<li class="nav-item"><a href="#code">Code</a></li>
-				<li class="nav-item"><a href="#education">Education</a></li>
-				<li class="nav-item"><a href="#english">English</a></li>
-			</ul>
-		</nav>
+		<div class="container header-container">
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#top" class="nav-link">^^^^^^^^^</a></li>
+          <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">Summary</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+          <li class="nav-item"><a href="#english" class="nav-link">English</a></li>
+        </ul>
+      </nav>
+    </div>
 	</header>
 	<main class="main">
-		<section class="name-section">
-			<h1 class="name-header">Roman Kondrashuk</h1>
-			<p class="location">| Minsk, Belarus</p>
-		</section>
-		<section class="main-content">
-			<h2 class="content-header" id="contacts">[Contacts]</h2>
-			<ul class="contacts-list">
-				<li class="contacts-item"><b>Telephone:</b> <a href="tel:+375291076700">+375291076700</a></li>
-				<li class="contacts-item"><b>E-mail:</b> <a href="mailto:tumaf@mail.ru">tumaf@mail.ru</a></li>
-				<li class="contacts-item"><b>Discord:</b> solarpal</li>
-				<li class="contacts-item"><b>GitHub:</b> <a href="https://github.com/SolarPal" target="_blank">SolarPal</a></li>
-			</ul>
-			<h2 class="content-header" id="about">[About me]</h2>
-			<p class="info-paragraph">My professional goal is to get needed knowledge to start IT carreer so I'll could work remotely and be able to spend more time with my loved ones.
-			Also I want to prove myself that I can overcome my fear, jump over my head and finish something I can be proud of.</p>
-			<h2 class="content-header" id="skills">[My skills]</h2>
-			<p class="info-paragraph">I've practiced C++ on a beginner's level for some time. Also I can write simple algorithms using JavaScript, Python or PHP.
-			I like to use simple code editors like Notepad++ or Xed and compile code through terminal. I know how to use Git system.
-			Also I've used different operation systems in my life such as Windows, iOS, Linux, Android and even Symbian.</p>
-			<h2 class="content-header" id="code">[Code example]</h2>
-			<p class="info-paragraph">You can see the example of my <a href="https://www.codewars.com/kata/514b92a657cdc65150000006/" target="_blank">Codewars' kata "Multiples of 3 or 5"</a>
-			solution below:</p>
-			<pre>
-				<code class="code-sample">
-				<span class="code-keyword">function</span> solution(<var>number</var>){
-				  <span class="code-keyword">if</span> (<var>number</var> &lt;= 0) {
-				    <span class="code-keyword">return</span> 0;
-				  } <span class="code-keyword">else</span> {
-				    <span class="code-keyword">let</span> <var>arr</var> = [];
-				    <span class="code-keyword">let</span> <var>sum</var> = 0;
-				    <span class="code-keyword">for</span> (<span class="code-keyword">let</span> <var>i</var> = 0; <var>i</var> &lt; <var>number</var>; <var>i</var>++) {
-				      <span class="code-keyword">if</span> (i % 3 == 0 | i % 5 == 0) {
-				    	<var>arr</var>.push(<var>i</var>);
-				    	<span class="code-keyword">continue</span>;
-				      } <span class="code-keyword">else</span> {
-				    	<span class="code-keyword">continue</span>;
-				      }
-				    }
-				    <span class="code-keyword">for</span> (<span class="code-keyword">let</span> <var>i</var> = 0; <var>i</var> &lt; <var>arr</var>.length; <var>i</var>++) {
-				      <var>sum</var> += <var>arr</var>[<var>i</var>];
-				    }
-				    <span class="code-keyword">return</span> <var>sum</var>;
-				  }
-				}
-				</code>
-			</pre>
-			<h2 class="content-header" id="education">[Education]</h2>
-			<p class="info-paragraph">I still learning computer science and programming in Belarusian National Technical University (BNTU). I'll be graduated in 2026.</p>
-			<h2 class="content-header" id="english">[English level]</h2>
-			<p class="info-paragraph">EPAM's training portal saying that I have B1 English language level.
-			I've practiced speaking in some foreign trips I had and studied it on my own using modern resources.</p>
-		</section>
+    <div class="container main-container">
+      <section class="section name-section">
+        <div class="name-container">
+          <img class="avatar" src="./assets/img/avatar.png" alt="Avatar">
+          <h1 class="name-header">Roman Kondrashuk</h1>
+        </div>
+        <p class="location">| Minsk, Belarus</p>
+      </section>
+      <section class="section main-content">
+        <h2 class="content-header" id="contacts">[Contacts]</h2>
+        <ul class="contacts-list">
+          <li class="contacts-item"><b>Telephone:</b> <a href="tel:+375291076700">+375291076700</a></li>
+          <li class="contacts-item"><b>E-mail:</b> <a href="mailto:tumaf@mail.ru">tumaf@mail.ru</a></li>
+          <li class="contacts-item"><b>Discord:</b> solarpal</li>
+          <li class="contacts-item"><b>GitHub:</b> <a href="https://github.com/SolarPal" target="_blank">SolarPal</a></li>
+        </ul>
+        <h2 class="content-header" id="about">[About me]</h2>
+        <p class="info-paragraph">My professional goal is to get needed knowledge to start IT carreer so I'll could work remotely and be able to spend more time with my loved ones.
+        Also I want to prove myself that I can overcome my fear, jump over my head and finish something I can be proud of.</p>
+        <h2 class="content-header" id="skills">[My skills]</h2>
+        <p class="info-paragraph">I've practiced C++ on a beginner's level for some time. Also I can write simple algorithms using JavaScript, Python or PHP.
+        I like to use simple code editors like Notepad++ or Xed and compile code through terminal. I know how to use Git system.
+        Also I've used different operation systems in my life such as Windows, iOS, Linux, Android and even Symbian.</p>
+        <h2 class="content-header" id="code">[Code example]</h2>
+        <p class="info-paragraph">You can see the example of my <a href="https://www.codewars.com/kata/514b92a657cdc65150000006/" target="_blank">Codewars' kata "Multiples of 3 or 5"</a>
+        solution below:</p>
+        <pre>
+          <code class="code-sample">
+          <span class="code-keyword">function</span> solution(<var>number</var>){
+            <span class="code-keyword">if</span> (<var>number</var> &lt;= 0) {
+              <span class="code-keyword">return</span> 0;
+            } <span class="code-keyword">else</span> {
+              <span class="code-keyword">let</span> <var>arr</var> = [];
+              <span class="code-keyword">let</span> <var>sum</var> = 0;
+              <span class="code-keyword">for</span> (<span class="code-keyword">let</span> <var>i</var> = 0; <var>i</var> &lt; <var>number</var>; <var>i</var>++) {
+                <span class="code-keyword">if</span> (i % 3 == 0 | i % 5 == 0) {
+                <var>arr</var>.push(<var>i</var>);
+                <span class="code-keyword">continue</span>;
+                } <span class="code-keyword">else</span> {
+                <span class="code-keyword">continue</span>;
+                }
+              }
+              <span class="code-keyword">for</span> (<span class="code-keyword">let</span> <var>i</var> = 0; <var>i</var> &lt; <var>arr</var>.length; <var>i</var>++) {
+                <var>sum</var> += <var>arr</var>[<var>i</var>];
+              }
+              <span class="code-keyword">return</span> <var>sum</var>;
+            }
+          }
+          </code>
+        </pre>
+        <h2 class="content-header" id="education">[Education]</h2>
+        <p class="info-paragraph">I still learning computer science and programming in Belarusian National Technical University (BNTU). I'll be graduated in 2026.</p>
+        <h2 class="content-header" id="english">[English level]</h2>
+        <p class="info-paragraph">EPAM's training portal saying that I have B1 English language level.
+        I've practiced speaking in some foreign trips I had and studied it on my own using modern resources.</p>
+      </section>
+    </div>
 	</main>
 	<footer class="footer">
+    <div class="container footer-container">
+      <div>
+        <a class="github-link" href="https://github.com/SolarPal" target="_blank">SolarPal</a>
+        © 2023
+      </div>
+      <a class="rss-logo-link" href="https://rs.school/js" target="_blank"></a>
+    </div>
 	</footer>
   </body>
 </html>

@@ -4,7 +4,7 @@
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 	font-family: "VT323", monospace;
 	font-weight: 100;
 }
@@ -14,6 +14,9 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 	background-color: #111111;
 	color: #eeeeee;
 }
@@ -38,6 +41,21 @@ a:active {
 	color: #ff5050;
 }
 
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin: 0 auto;
+  font-size: 18px;
+  border-top: 4px solid #eeeeee;
+}
+
 .header {
 	position: fixed;
 }
@@ -47,12 +65,22 @@ a:active {
 	font-size: 32px;
 }
 
-.nav-item {
+.nav-link {
+  line-height: 60px;
 }
 
-.name-section {
-	margin-left: 200px;
-	margin-right: 200px;
+.name-container {
+  display: inline-flex;
+  justify-content: space-around;
+  padding-top: 50px;
+}
+
+.avatar {
+  width: 114px;
+  height: 117px;
+  padding: 10px;
+  margin-right: 60px;
+  border: 4px solid #eeeeee;
 }
 
 .name-header {
@@ -61,11 +89,6 @@ a:active {
 
 .location {
 	font-size: 24px;
-}
-
-.main-content {
-	margin-left: 200px;
-	margin-right: 200px;
 }
 
 .content-header {
@@ -84,12 +107,21 @@ a:active {
 
 .code-sample {
 	display: block;
-	border: 4px dotted #eeeeee;
 	font-size: 24px;
 	background-color: #111122;
+	border: 4px dotted #eeeeee;
 }
 
 .code-keyword {
 	font-weight: bold;
 	color: #ccffcc;
+}
+
+.rss-logo-link {
+  width: 120px;
+  height: 45px;
+  background-image: url("./assets/svg/rss.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #eeeeee;
 }
